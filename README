@@ -25,7 +25,7 @@ Se si usa maven, al proprio file pom.xml va agginta la dipendenza
     <dependency>
       <groupId>org.geoserver</groupId>
       <artifactId>gs-restclient</artifactId>
-      <version>0.1</version>
+      <version>2.0</version>
     </dependency>
 
 Aggiornare il classpath di eclipse se necessario, in maniera consona.
