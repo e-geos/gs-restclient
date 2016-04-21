@@ -1,0 +1,36 @@
+===========
+Descrizione
+===========
+
+Client REST per Geoserver utilizzabile in qualsiasi progetto che abbia bisogno 
+di interagire con Geoserver. 
+
+Utilizza le API standard per gestire Workspaces, Stores e Layers.
+
+Utilizza EgeosManager (https://share.realvista.it/svn/lait/EgeosManager/trunk) 
+per gestire Utenti/Gruppi/Ruoli/Regole.
+
+In src/test c'e' un tester omnicomprensivo.
+
+=======
+Install
+=======
+
+Per installare ed utilizzare la lib, e' sufficiente utilizzare 
+
+$ mvn clean install
+
+Se si usa maven, al proprio file pom.xml va agginta la dipendenza 
+
+    <dependency>
+      <groupId>org.geoserver</groupId>
+      <artifactId>gs-restclient</artifactId>
+      <version>0.1</version>
+    </dependency>
+
+Aggiornare il classpath di eclipse se necessario, in maniera consona.
+
+===========
+In sviluppo
+===========
+- Amministrazione completa dei layer (per il momento e' solo possibile caricare SHP file)
