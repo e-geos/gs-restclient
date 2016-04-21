@@ -7,9 +7,6 @@ di interagire con Geoserver.
 
 Utilizza le API standard per gestire Workspaces, Stores e Layers.
 
-Utilizza EgeosManager (https://share.realvista.it/svn/lait/EgeosManager/trunk) 
-per gestire Utenti/Gruppi/Ruoli/Regole.
-
 In src/test c'e' un tester omnicomprensivo.
 
 =======
