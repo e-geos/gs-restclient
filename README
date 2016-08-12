@@ -1,33 +1,34 @@
 ===========
-Descrizione
+Description
 ===========
 
-Client REST per Geoserver utilizzabile in qualsiasi progetto che abbia bisogno 
-di interagire con Geoserver. 
+This is a REST java library to comunicate with Geoserver (http://geoserver.org) with 
+EgeosManager (https://github.com/e-geos/egeosmanager/releases/tag/v3.0).
+See tests folder for examples.
 
-Utilizza le API standard per gestire Workspaces, Stores e Layers.
+============
+Requirements
+============
 
-In src/test c'e' un tester omnicomprensivo.
+This lib use a fork of geoserver-manager (https://github.com/geosolutions-it/geoserver-manager) 
+from GeoSolutions (http://www.geo-solutions.it)
+
+Our fork is available here:
+
+https://github.com/e-geos/geoserver-manager
+
+The difference you can see here 
+
+https://github.com/geosolutions-it/geoserver-manager/pulls/cippino
+
+and we are waiting for acceptance.
 
 =======
 Install
 =======
-
-Per installare ed utilizzare la lib, e' sufficiente utilizzare 
+To compile and use it, you require Maven (https://maven.apache.org/): 
 
 $ mvn clean install
 
-Se si usa maven, al proprio file pom.xml va agginta la dipendenza 
+In target folder you'll find the jar.
 
-    <dependency>
-      <groupId>org.geoserver</groupId>
-      <artifactId>gs-restclient</artifactId>
-      <version>2.0</version>
-    </dependency>
-
-Aggiornare il classpath di eclipse se necessario, in maniera consona.
-
-===========
-In sviluppo
-===========
-- Amministrazione completa dei layer (per il momento e' solo possibile caricare SHP file)

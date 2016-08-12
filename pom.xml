@@ -4,6 +4,13 @@
 	<groupId>org.geoserver</groupId>
 	<artifactId>gs-restclient</artifactId>
 	<name>Geoserver REST Client</name>
+	
+	<properties>
+		<java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>		
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
@@ -41,7 +48,7 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.5.11</version>
+			<version>1.7.21</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -49,8 +56,8 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -65,5 +72,5 @@
 			<url>http://repo.boundlessgeo.com/main</url>
 		</repository>
 	</repositories>
-	<version>2.0</version>
+	<version>3.0</version>
 </project>

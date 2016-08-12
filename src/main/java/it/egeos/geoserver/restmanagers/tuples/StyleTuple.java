@@ -43,6 +43,6 @@ public class StyleTuple extends GenericTuple{
 	}
 	
 	public String toString(){
-		return (workspace!=null?workspace.name:null)+":"+name;
+		return (workspace!=null?workspace.name+":":"")+name;
 	}
 }

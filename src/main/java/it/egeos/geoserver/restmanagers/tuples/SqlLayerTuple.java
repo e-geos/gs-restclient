@@ -1,17 +1,14 @@
 package it.egeos.geoserver.restmanagers.tuples;
 
-import it.geosolutions.geoserver.rest.encoder.metadata.virtualtable.VTGeometryEncoder;
-import it.geosolutions.geoserver.rest.encoder.metadata.virtualtable.VTParameterEncoder;
-
 import java.util.List;
 
 public class SqlLayerTuple extends LayerTuple {
     public String sql=null;
-    public List<VTGeometryEncoder> geomEncList=null;
-    public List<VTParameterEncoder> paramEncList=null;
+    public List<VTGeometryTuple> geomEncList=null;
+    public List<VTParameterTuple> paramEncList=null;
     
     
-    public SqlLayerTuple(String name, String title, StoreTuple store,String sql, List<VTGeometryEncoder> geomEncList, List<VTParameterEncoder> paramEncList) {
+    public SqlLayerTuple(String name, String title, StoreTuple store,String sql, List<VTGeometryTuple> geomEncList, List<VTParameterTuple> paramEncList) {
         super(name, title, store);
         this.sql = sql;
         this.geomEncList = geomEncList;

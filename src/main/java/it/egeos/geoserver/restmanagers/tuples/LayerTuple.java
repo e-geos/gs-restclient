@@ -7,8 +7,14 @@ import org.json.JSONObject;
 
 public class LayerTuple extends GenericTuple{
 	public String name=null;
+	public String nativeName=null;
 	public String title=null;
 	public StoreTuple store=null;
+    public double maxX;
+    public double maxY;
+    public double minX;
+    public double minY;
+    public String crs;
 	
 	public LayerTuple(){
 		super();
@@ -45,9 +51,11 @@ public class LayerTuple extends GenericTuple{
 		}		
 		return res;
 	}
-	
-	@Override
-	public String toString() {
-		return "LayerTuple("+name+","+title+","+store+")";
-	}	
+
+    @Override
+    public String toString() {
+        return "LayerTuple [name=" + name + ", title=" + title + ", store=" + store + ", maxX=" + maxX + ", maxY="
+                + maxY + ", minX=" + minX + ", minY=" + minY + ", crs=" + crs + "]";
+    }
+
 }
